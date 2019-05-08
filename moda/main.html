@@ -1,0 +1,5057 @@
+	<!DOCTYPE html>
+	<!--[if IE 7]> <html lang="en" class="ie7 responsive" > <![endif]-->  
+	<!--[if IE 8]> <html lang="en" class="ie8 responsive" > <![endif]-->  
+	<!--[if IE 9]> <html lang="en" class="ie9 responsive" > <![endif]-->  
+	<!--[if !IE]><!--> 
+	<html lang="en" class="responsive" > <!--<![endif]-->  
+	
+<!-- Mirrored from fastortheme.com/defaultnew/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2019 17:15:08 GMT -->
+<!-- Added by HTTrack -->
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+	<head>
+		<title>Your Store</title>
+		<base  />
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="My Store" />
+		<link href="img/catalog/cart.png" rel="icon" />
+		<!-- Google Fonts -->
+		<link href="fonts.googleapis.com/css6079.css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/filter_product.css" />
+		<link rel="stylesheet" type="text/css" href="css/wide-grid.css" />
+<style type="text/css">
+		.megamenu-background {
+			border-bottom-color: none;
+		}
+		
+		      
+		     .megamenu-background {
+		          border-bottom: none;
+		     }
+		      
+		 
+		.footer .background,
+		.standard-body .footer .background,
+		.copyright .background,
+		.standard-body .copyright .background {
+			background: #1f1f1f;
+		}
+		 
+	 
+</style>
+		<link rel="stylesheet" href="skins/store_default/Default%20New/css/custom_code.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery/magnific/magnific-popup.css" media="screen" />
+	 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tweetfeed.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+<script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+	    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	    	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	    <script type="text/javascript" src="js/jquery/magnific/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript">
+			var responsive_design = 'yes';
+		</script>
+		<!--[if lt IE 9]>
+			<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="catalog/view/theme/fastor/js/respond.min.js"></script>
+		<![endif]-->
+	</head>	
+	<body class="common-home    product-grid-type-8              megamenu-type-35     no-box-type-7          border-width-0   body-other     body-header-type-1">
+	<script type="text/javascript">
+	$(window).load(function(){
+	     $('.quickview a').magnificPopup({
+	          preloader: true,
+	          tLoading: '',
+	          type: 'iframe',
+	          mainClass: 'quickview',
+	          removalDelay: 200,
+	          gallery: {
+	           enabled: true
+	          }
+	     });
+	});
+	</script>
+  <div id="popup-1" class="popup  mfp-hide " style=" max-width: 750px;    background-image: url(img/catalog/bg-popup-newsletter.png);background-position: top right;background-repeat: no-repeat; ">
+       
+                       <h4>Join our newsletter<br>and get discount!</h4>           <div class="content">Subscribe to the newsletter to receive<br>
+updates about new products.</div>
+           <div class="newsletter">
+            <input type="text" class="email" placeholder="E-mail" />
+            <a class="button subscribe">Add</a>
+           </div> 
+                 <script type="text/javascript">
+                 $(document).ready(function() {
+                  function Subscribe() {
+                     
+                    $.post('index15fb.html?route=extension/module/newsletter/subscribe', 
+                      { 
+                        email: $('#popup-1 .email').val() 
+                      }, function (e) {
+                        if(e.error === 1) {
+                          var r = confirm(e.message);
+                          if (r == true) {
+                              $.post('indexa47f.html?route=extension/module/newsletter/unsubscribe', { 
+                                email: $('#popup-1 .email').val() 
+                              }, function (e) {
+                                $('#popup-1 .email').val('');
+                                alert(e.message);
+                              }, 'json');
+                          }
+                      } else if(e.error === 0) {
+                        $('#popup-1 .email').val('');
+                        alert(e.message);
+                        $.magnificPopup.close();
+                        } else {
+                          $('#popup-1 .email').val('');
+                          alert(e.message);
+                        }
+                      }
+                    , 'json');
+                     
+                  }
+                  
+                  $('#popup-1 .subscribe').click(Subscribe);
+                  $('#popup-1 .email').keypress(function (e) {
+                      if (e.which == 13) {
+                          Subscribe();
+                      }
+                  });
+                 });
+                 </script>     
+  </div>
+
+   
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+     
+    if($(window).width() > 992) {
+     
+
+        
+       $('#popup-1 .dont-show-me').change(function () {
+            if ($(this).is(':checked')) {
+                 localStorage.setItem('popup-module-1', 'yes');
+            } else {
+                 localStorage.setItem('popup-module-1', 'no');
+            }
+       });
+       
+       if (localStorage.getItem('popup-module-1') != 'yes') {
+             
+            localStorage.setItem('popup-module-1', 'yes');
+             
+        
+
+            var show_after = parseInt('', 20);
+            var autoclose_after = parseInt('', 20);
+            setTimeout(function () {
+              $.magnificPopup.open({
+                  items: {
+                      src: '#popup-1',
+                      type: 'inline'
+                  },
+                  tLoading: '',
+                  mainClass: 'popup-module mfp-with-zoom popup-type-1',
+                  removalDelay: 200,
+                   
+              });
+       
+              if (autoclose_after > 0) {
+                  setTimeout(function () {
+                      $.magnificPopup.close();
+                  }, autoclose_after);
+              }
+            }, show_after);
+            
+             
+       
+        
+       }
+        
+
+     
+    }
+     
+
+  });
+  </script>
+	<div class="standard-body " id="header-notice-13554884">
+     <div class="header-notice full-width clearfix">
+          <a href="#" class="close-notice"></a>
+          <div class="container">
+           	<p><span class="new-header-notice"><span>Sale 30%</span> for all products <a href="#" class="header-notice-button">Shop now</a></span>
+			<link href="fonts.googleapis.com/css8f23.css?family=Caveat" rel="stylesheet"></p>
+          </div>
+     </div>
+	</div>
+
+<script type="text/javascript">
+      var css_tpl = '<style type="text/css">';
+       
+      css_tpl += '#header-notice-13554884 .header-notice {';
+      css_tpl += '     background: #0f1b10;';
+      css_tpl += '}';
+       
+      css_tpl += '</style>'
+    $("head").append(css_tpl);
+</script>
+
+<script type="text/javascript">
+     $("#header-notice-13554884 .header-notice").show();
+     $('#header-notice-13554884 .close-notice').on('click', function () {
+          $("#header-notice-13554884 .header-notice").hide();
+          return false;
+     });
+</script>
+			<div id="cookie-1" class="cookie "
+     style="position: fixed;
+            width: 100%;
+            z-index: 9999;
+             
+                      background-image: url(img/catalog/bg-cookie-module.png); 
+           background-position: bottom center;
+           background-repeat: no-repeat; 
+                                 bottom: 0
+            
+     ">
+     <div class="standard-body">
+          <div class="full-width">
+              <div class="container">
+                  <div class="content" style=" color: #808080; ">Our website use cookies. If you continue to use this site we will assume that you are happy with this. <br>
+More about cookies: <a href="../../www.aboutcookies.org/index.html" target="_blank" style="color: #d9121f ">www.aboutcookies.org</a></div>
+          
+                  <div class="operations">          
+                     <div class="button">Accept cookies</div>
+                  </div>
+              </div>
+          </div>
+     </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+      $('#cookie-1 .button').click(function () {
+           var now = new Date();
+             var time = now.getTime();
+             time += 3600 * 24 * 1000 * 365;
+             now.setTime(time);
+           document.cookie = encodeURIComponent('cookie-module-1-accepted') + "=" + encodeURIComponent(1) + ';expires=' + now.toUTCString() + "; path=/";
+           $('#cookie-1').fadeOut('slow');
+      });
+
+});
+</script>
+	 <div class=" fixed-body     ">
+		<div id="main" class=" main-fixed ">
+				  
+<!-- HEADER
+	================================================== -->
+<div class="fixed-header-1 sticky-header">
+	<div class="background-header"></div>
+	<div class="slider-header">
+		<!-- Top of pages -->
+		<div id="top" class=" full-width ">
+			<div class="background-top"></div>
+			<div class="background">
+				<div class="shadow"></div>
+				<div class="pattern">
+					     <div class="megamenu-background">
+					          <div class="">
+					               <div class="overflow-megamenu container">
+               						
+ 						 <div class="row mega-menu-modules"> 						 						 
+ 						 
+ 						  <div class="col-md-3"> 						  							  
+			 	 
+
+	<div id="megamenu_700750071" class="container-megamenu  container   vertical    mobile-disabled ">
+		 
+		<div id="menuHeading">
+			<div class="megamenuToogle-wrapper">
+				<div class="megamenuToogle-pattern">
+					<div class="container">
+						Categories 
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="megamenu-wrapper">
+			<div class="megamenu-pattern">
+				<div class="container">
+					<ul class="megamenu  shift-left ">
+ 								<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index1647.html?route=product/category&amp;path=25' class='clearfix' ><span><strong>Men<span class="megamenu-label" style="background: #d9121f;color: #ffffff;"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></strong></span></a> 
+																	</li>
+																<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index7fa3.html?route=product/category&amp;path=18' class='clearfix' ><span><strong>     Women</strong></span></a> 
+																																																												<div class="sub-menu " style="width:190px">
+											<div class="content" ><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-12 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="with-submenu">Medium</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">New</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Popular</a></li></ul></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Jeans</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Medium</a></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li></ul></div></div></div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+								 								<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index1647.html?route=product/category&amp;path=25' class='clearfix' ><span><strong>Accessories<span class="megamenu-label" style="background: #1349b2;color: #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a> 
+																			
+																																																																																	<div class="sub-menu " style="width:795px">
+											<div class="content" style="background-image:url(img/catalog/bg-women.png);background-position: top right;background-repeat: no-repeat;"><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-3 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Jeans</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li><li><a href="index68ea.html?route=product/category&amp;path=33" onclick="window.location = 'index68ea.html?route=product/category&amp;path=33';" class="main-menu ">Cameras</a></li><li><a href="indexb152.html?route=product/category&amp;path=17" onclick="window.location = 'indexb152.html?route=product/category&amp;path=17';" class="main-menu ">Software</a></li></ul></div></div></div>
+																										
+														</div>
+													 
+														
+														 
+																																											<div class="col-sm-5 mobile-disabled">
+																															<p><br></p>
+																										
+														</div>
+													 
+														
+														 
+																																											<div class="col-sm-4 mobile-disabled">
+																															<div style="float:right;width:238px"> <div class="product">  <div class="new">New</div>
+
+  <div class="image"><a href="indexbb02.html?route=product/product&amp;product_id=42"><img src="img/catalog/megamenu-product.png" alt="Product"></a></div>
+
+  <div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30"</a></div>
+
+  <div class="price">$110.00</div>
+
+</div>
+
+</div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index1647.html?route=product/category&amp;path=25' class='clearfix' ><span><strong>Lookbook</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='indexe223.html?route=account/wishlist' class='clearfix' ><span><strong>Wishlist</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index2724.html?route=information/contact' class='clearfix' ><span><strong>Contact</strong></span></a> 
+																	</li>
+												</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	  $(window).load(function(){
+	      var css_tpl = '<style type="text/css">';
+	      css_tpl += '#megamenu_700750071 ul.megamenu > li > .sub-menu > .content {';
+	      css_tpl += '-webkit-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-moz-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-o-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-ms-transition: all  200 ms ease-out !important;';
+	      css_tpl += 'transition: all  200 ms ease-out !important;';
+	      css_tpl += '}</style>'
+	    $("head").append(css_tpl);
+	  });
+	</script>
+
+ 							 </div> 							 							 						 
+ 						  						  <div class="col-md-9"> 							  
+			 	 
+
+	<div id="megamenu_482788098" class="container-megamenu   horizontal  ">
+		 
+		<div class="megaMenuToggle">
+			<div class="megamenuToogle-wrapper">
+				<div class="megamenuToogle-pattern">
+					<div class="container">
+						<div><span></span><span></span><span></span></div>
+						Navigation 
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="megamenu-wrapper">
+			<div class="megamenu-pattern">
+				<div class="container">
+					<ul class="megamenu  shift-up ">
+						 
+						 
+						 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+								 								<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Men<span class="megamenu-label" style="background: #d9121f;color: #ffffff;"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></strong></span></a> 
+																			
+																																																												<div class="sub-menu " style="width:190px">
+											<div class="content" ><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-12 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="with-submenu">Short</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">New</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Popular</a></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="with-submenu">Medium</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">New</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Popular</a></li></ul></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Jeans</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Medium</a></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li></ul></div></div></div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+																<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Women</strong></span></a> 
+																			
+																																																																																	<div class="sub-menu " style="width:750px">
+											<div class="content" style="background-image:url(img/catalog/bg-megamenu.png);background-position: top right;background-repeat: no-repeat;"><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-3 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Jeans</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li></ul></div></div></div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+								 								<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Accessories<span class="megamenu-label" style="background: #1349b2;color: #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a> 
+																			
+																																																																							 										<div class="sub-menu full-width-sub-menu" style="width:100%">
+											<div class="content" style="background-image:url(img/catalog/bg-accessories.png);background-position: top right;background-repeat: no-repeat;"><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-6 mobile-enabled">
+																															<div class="row"><div class="col-sm-4 static-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Shirt</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Accessories</a></li></ul></li></ul></div></div><div class="col-sm-4 static-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Jeans</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Medium</a></li></ul></li></ul></div></div><div class="col-sm-4 static-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Accessories</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">New</a></li></ul></li></ul></div></div></div>
+																										
+														</div>
+													 
+														
+																																												</div><div class="border"></div><div class="row">
+																												<div class="col-sm-12 mobile-disabled">
+																															<a href="#" style="display: block;max-width: 555px"><img src="img/catalog/megamenu-banner.png" alt="Banner" style="display: block"></a>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Lookbook</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='indexe223.html?route=account/wishlist' class='clearfix' ><span><strong>Wishlist</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index2724.html?route=information/contact' class='clearfix' ><span><strong>Contact</strong></span></a> 
+																	</li>
+							 
+								
+																																																																 
+									 
+																																								 
+									
+																<li class=' pull-right' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index8024.html?route=blog/blog' class='clearfix' ><span><strong>Blog</strong></span></a> 
+																	</li>
+												</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	  $(window).load(function(){
+	      var css_tpl = '<style type="text/css">';
+	      css_tpl += '#megamenu_482788098 ul.megamenu > li > .sub-menu > .content {';
+	      css_tpl += '-webkit-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-moz-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-o-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-ms-transition: all  200 ms ease-out !important;';
+	      css_tpl += 'transition: all  200 ms ease-out !important;';
+	      css_tpl += '}</style>'
+	    $("head").append(css_tpl);
+	  });
+	</script>
+
+ 							 </div> 							 </div> 							 						 
+               					</div>
+               				</div>
+               			</div>
+															
+					 
+					
+					
+										 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+
+<!-- HEADER
+	================================================== -->
+ <header>
+	<div class="background-header"></div>
+	<div class="slider-header">
+		<!-- Top of pages -->
+		<div id="top" class=" full-width ">
+			<div class="background-top"></div>
+			<div class="background">
+				<div class="shadow"></div>
+				<div class="pattern">
+					<div class="container">
+						<div class="row">
+							<!-- Header Left -->
+							<div class="col-sm-4" id="header-left">
+                                <!-- Search -->
+                                <div class="search_form">
+                                	<div class="button-search"></div>
+                                	<input type="text" class="input-block-level search-query" name="search" placeholder="Search" id="search_query" value="" />
+                                	
+                                	 
+                                		<div id="autocomplete-results" class="autocomplete-results"></div>
+                                		
+                                		<script type="text/javascript">
+                                		$(document).ready(function() {
+                                			$('#search_query').autocomplete({
+                                				delay: 0,
+                                				appendTo: "#autocomplete-results",
+                                				source: function(request, response) {		
+                                					$.ajax({
+                                						url: 'index.php?route=search/autocomplete&filter_name=' +  encodeURIComponent(request.term),
+                                						dataType: 'json',
+                                						success: function(json) {
+                                							response($.map(json, function(item) {
+                                								return {
+                                									label: item.name,
+                                									value: item.product_id,
+                                									href: item.href,
+                                									thumb: item.thumb,
+                                									desc: item.desc,
+                                									price: item.price
+                                								}
+                                							}));
+                                						}
+                                					});
+                                				},
+                                				select: function(event, ui) {
+                                					document.location.href = ui.item.href;
+                                					
+                                					return false;
+                                				},
+                                				focus: function(event, ui) {
+                                			      	return false;
+                                			   	},
+                                			   	minLength: 2
+                                			})
+                                			.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+                                			  return $( "<li>" )
+                                			    .append( "<a>" + item.label + "</a>" )
+                                			    .appendTo( ul );
+                                			};
+                                		});
+                                		</script>
+                                	 
+                                </div>
+                                
+                                 
+<form action="http://fastortheme.com/defaultnew/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="currency_form">
+	<!-- Currency -->
+	<div class="dropdown">
+		 
+			 
+		 
+			 
+		 
+			 
+			<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">$</a>
+			 
+		 
+		<ul class="dropdown-menu">
+		   
+		  <li><a href="javascript:;" onclick="$('input[name=\'code\']').attr('value', 'EUR'); $('#currency_form').submit();">Euro</a></li>
+		   
+		  <li><a href="javascript:;" onclick="$('input[name=\'code\']').attr('value', 'GBP'); $('#currency_form').submit();">Pound Sterling</a></li>
+		   
+		  <li><a href="javascript:;" onclick="$('input[name=\'code\']').attr('value', 'USD'); $('#currency_form').submit();">US Dollar</a></li>
+		   
+		</ul>
+	</div>
+	
+    <input type="hidden" name="code" value="" />
+    <input type="hidden" name="redirect" value="index9328.html?route=common/home" />
+</form>
+ 
+ 
+							</div>
+							
+							<!-- Header Center -->
+							<div class="col-sm-4" id="header-center">		
+							      
+							     <!-- Logo -->
+							     <div class="logo"><a href="index9328.html?route=common/home"><img src="img/catalog/logo_fastor.png" title="Your Store" alt="Your Store" /></a></div>
+							      
+							</div>
+							
+							<!-- Header Right -->
+							<div class="col-sm-4" id="header-right">
+								     
+								 								  
+							     
+						     	 
+						     		<a href="indexe223.html?route=account/account" class="my-account"><i class="fa fa-user"></i></a>
+						      	 
+							  
+ 
+
+<!-- Cart block -->
+<div id="cart_block" class="dropdown">
+	<div class="cart-heading dropdown-toogle" data-hover="dropdown" data-toggle="dropdown" onclick="window.location.href = 'index630e.html?route=checkout/cart'">
+		<i class="cart-count"><span id="total_count_ajax">0</span></i>
+		
+		 
+		     <i class="cart-icon"><img src="img/icon-cart-hover.png" class="cart-icon-hover" alt=""><img src="img/icon-cart.png" class="cart-icon-standard" alt=""></i>
+		 
+		
+		<p><strong id="total_price_ajax"><span id="total_price">$0.00</span></strong></p>
+	</div>
+	
+	<div class="dropdown-menu" id="cart_content"><div id="cart_content_ajax">
+		 
+		<div class="empty">Your shopping cart is empty!</div>
+		  
+	</div></div>
+</div>
+  
+							</div>
+						</div>
+					</div>
+					
+					
+					 
+					
+										 
+					     <div class="megamenu-background">
+					          <div class="">
+					               <div class="overflow-megamenu container">
+				 						 <div class="row mega-menu-modules">				 										 						 
+				 						 	 <div class="col-md-3">				 						 					 							  
+			 	 
+
+	<div id="megamenu_585006012" class="container-megamenu  container   vertical    mobile-disabled ">
+		 
+		<div id="menuHeading">
+			<div class="megamenuToogle-wrapper">
+				<div class="megamenuToogle-pattern">
+					<div class="container">
+						Categories 
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="megamenu-wrapper">
+			<div class="megamenu-pattern">
+				<div class="container">
+					<ul class="megamenu  shift-left ">
+						 
+						 
+						 
+								
+																																																																																																 
+									
+								 								<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index1647.html?route=product/category&amp;path=25' class='clearfix' ><span><strong>Men<span class="megamenu-label" style="background: #d9121f;color: #ffffff;"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></strong></span></a> 
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+																<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index7fa3.html?route=product/category&amp;path=18' class='clearfix' ><span><strong>     Women</strong></span></a> 
+																			
+																																																												<div class="sub-menu " style="width:190px">
+											<div class="content" ><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-12 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="with-submenu">Medium</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">New</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Popular</a></li></ul></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Jeans</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Medium</a></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li></ul></div></div></div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+								 								<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index1647.html?route=product/category&amp;path=25' class='clearfix' ><span><strong>Accessories<span class="megamenu-label" style="background: #1349b2;color: #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a> 
+																			
+																																																																																	<div class="sub-menu " style="width:795px">
+											<div class="content" style="background-image:url(img/catalog/bg-women.png);background-position: top right;background-repeat: no-repeat;"><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-3 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Jeans</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li><li><a href="index68ea.html?route=product/category&amp;path=33" onclick="window.location = 'index68ea.html?route=product/category&amp;path=33';" class="main-menu ">Cameras</a></li><li><a href="indexb152.html?route=product/category&amp;path=17" onclick="window.location = 'indexb152.html?route=product/category&amp;path=17';" class="main-menu ">Software</a></li></ul></div></div></div>
+																										
+														</div>
+													 
+														
+														 
+																																											<div class="col-sm-5 mobile-disabled">
+																															<p><br></p>
+																										
+														</div>
+													 
+														
+														 
+																																											<div class="col-sm-4 mobile-disabled">
+																															<div style="float:right;width:238px"> <div class="product">  <div class="new">New</div>
+
+  <div class="image"><a href="indexbb02.html?route=product/product&amp;product_id=42"><img src="img/catalog/megamenu-product.png" alt="Product"></a></div>
+
+  <div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30"</a></div>
+
+  <div class="price">$110.00</div>
+
+</div>
+
+</div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index1647.html?route=product/category&amp;path=25' class='clearfix' ><span><strong>Lookbook</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='indexe223.html?route=account/wishlist' class='clearfix' ><span><strong>Wishlist</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index2724.html?route=information/contact' class='clearfix' ><span><strong>Contact</strong></span></a> 
+																	</li>
+												</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	  $(window).load(function(){
+	      var css_tpl = '<style type="text/css">';
+	      css_tpl += '#megamenu_585006012 ul.megamenu > li > .sub-menu > .content {';
+	      css_tpl += '-webkit-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-moz-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-o-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-ms-transition: all  200 ms ease-out !important;';
+	      css_tpl += 'transition: all  200 ms ease-out !important;';
+	      css_tpl += '}</style>'
+	    $("head").append(css_tpl);
+	  });
+	</script>
+
+				 							 </div>				 											 											 						 
+				 						 					 						 	 <div class="col-md-9">				 							  
+			 	 
+
+	<div id="megamenu_138612431" class="container-megamenu   horizontal  ">
+		 
+		<div class="megaMenuToggle">
+			<div class="megamenuToogle-wrapper">
+				<div class="megamenuToogle-pattern">
+					<div class="container">
+						<div><span></span><span></span><span></span></div>
+						Navigation 
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="megamenu-wrapper">
+			<div class="megamenu-pattern">
+				<div class="container">
+					<ul class="megamenu  shift-up ">
+						 
+						 
+						 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+								 								<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Men<span class="megamenu-label" style="background: #d9121f;color: #ffffff;"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></strong></span></a> 
+																			
+																																																												<div class="sub-menu " style="width:190px">
+											<div class="content" ><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-12 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="with-submenu">Short</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">New</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Popular</a></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="with-submenu">Medium</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">New</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Popular</a></li></ul></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Jeans</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="">Medium</a></li></ul></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li></ul></div></div></div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+																<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Women</strong></span></a> 
+																			
+																																																																																	<div class="sub-menu " style="width:750px">
+											<div class="content" style="background-image:url(img/catalog/bg-megamenu.png);background-position: top right;background-repeat: no-repeat;"><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-3 mobile-enabled">
+																															<div class="row"><div class="col-sm-12 hover-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Jeans</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Socks<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu ">Accessories</a></li></ul></div></div></div>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																 
+									 
+									 
+										 
+									 
+																																																								 
+									
+								 								<li class=' with-sub-menu hover' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Accessories<span class="megamenu-label" style="background: #1349b2;color: #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a> 
+																			
+																																																																							 										<div class="sub-menu full-width-sub-menu" style="width:100%">
+											<div class="content" style="background-image:url(img/catalog/bg-accessories.png);background-position: top right;background-repeat: no-repeat;"><p class="arrow"></p>
+												<div class="row">
+																										 
+														
+														 
+																																											<div class="col-sm-6 mobile-enabled">
+																															<div class="row"><div class="col-sm-4 static-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Shirt</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Pants<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Accessories</a></li></ul></li></ul></div></div><div class="col-sm-4 static-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Jeans</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Long</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Short</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Medium</a></li></ul></li></ul></div></div><div class="col-sm-4 static-menu"><div class="menu"><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';" class="main-menu with-submenu">Accessories</a><div class="open-categories"></div><div class="close-categories"></div><ul><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Hats</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">Shirt</a></li><li><a href="index98dc.html?route=product/category&amp;path=20" onclick="window.location = 'index98dc.html?route=product/category&amp;path=20';">New</a></li></ul></li></ul></div></div></div>
+																										
+														</div>
+													 
+														
+																																												</div><div class="border"></div><div class="row">
+																												<div class="col-sm-12 mobile-disabled">
+																															<a href="#" style="display: block;max-width: 555px"><img src="img/catalog/megamenu-banner.png" alt="Banner" style="display: block"></a>
+																										
+														</div>
+																									</div>
+											</div>
+										</div>
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index98dc.html?route=product/category&amp;path=20' class='clearfix' ><span><strong>Lookbook</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='indexe223.html?route=account/wishlist' class='clearfix' ><span><strong>Wishlist</strong></span></a> 
+																	</li>
+							 
+								
+																																																																																																 
+									
+																<li class='' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index2724.html?route=information/contact' class='clearfix' ><span><strong>Contact</strong></span></a> 
+																	</li>
+							 
+								
+																																																																 
+									 
+																																								 
+									
+																<li class=' pull-right' ><p class='close-menu'></p><p class='open-menu'></p> 
+								<a href='index8024.html?route=blog/blog' class='clearfix' ><span><strong>Blog</strong></span></a> 
+																	</li>
+												</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	  $(window).load(function(){
+	      var css_tpl = '<style type="text/css">';
+	      css_tpl += '#megamenu_138612431 ul.megamenu > li > .sub-menu > .content {';
+	      css_tpl += '-webkit-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-moz-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-o-transition: all  200 ms ease-out !important;';
+	      css_tpl += '-ms-transition: all  200 ms ease-out !important;';
+	      css_tpl += 'transition: all  200 ms ease-out !important;';
+	      css_tpl += '}</style>'
+	    $("head").append(css_tpl);
+	  });
+	</script>
+
+				 							 </div>				 							 </div>				 											 						 
+               					</div>
+               				</div>
+               			</div>
+										
+					 
+					
+					
+										 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	 
+	  
+	<!-- Slider -->
+	<div id="slider" class=" full-width ">
+		<div class="background-slider"></div>
+		<div class="background">
+			<div class="shadow"></div>
+			<div class="pattern">
+				 
+					 
+			 
+		 
+	<div class=" fullwidth " id="camera_1">
+		<div class="camera_slider">
+			<div class="spinner"></div>
+			<div class="camera_wrap" id="camera_wrap_1" class="carousel-inner" style="height: 500px">
+				 
+					 
+																		
+																			 
+
+						<div> <a href="#"> <img src="img/catalog/default_new/slider-01.jpg" alt="Slider"> </a> </div>
+									 
+					 
+																		
+																			 
+
+						<div> <a href="#"> <img src="img/catalog/default_new/slider-02.jpg" alt="Slider"> </a> </div>
+									 
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	 var camera_slider = $("#camera_wrap_1");
+	     
+	 camera_slider.owlCarousel({
+	 	 slideSpeed : 300,
+	  	 lazyLoad : true,
+	     singleItem: true,
+	     autoPlay: 13000,
+	     stopOnHover: true,
+	     navigation: true,
+	      
+	     navigationText: false
+	  });
+	  
+	$(window).load(function() {	
+	  $("#camera_1 .spinner").fadeOut(200);
+	  $("#camera_wrap_1").css("height", "auto");
+	});	
+	</script>
+ 
+				 
+					 
+	<div class="row row-no-padding">
+   <div class="col-sm-6">
+      <a href="#"><img src="img/catalog/default_new/banner-01.jpg" alt="Banner" style="display:block;margin:0px auto"></a>
+   </div>
+
+   <div class="col-sm-6">
+      <a href="#"><img src="img/catalog/default_new/banner-02.jpg" alt="Banner" style="display:block;margin:0px auto"></a>
+   </div>
+</div>
+
+<div class="row row-no-padding">
+   <div class="col-sm-4">
+      <a href="#"><img src="img/catalog/default_new/banner-03.jpg" alt="Banner" style="display:block;margin:0px auto"></a>
+   </div>
+
+   <div class="col-sm-4">
+      <a href="#"><img src="img/catalog/default_new/banner-04.jpg" alt="Banner" style="display:block;margin:0px auto"></a>
+   </div>
+
+   <div class="col-sm-4">
+      <a href="#"><img src="img/catalog/default_new/banner-05.jpg" alt="Banner" style="display:block;margin:0px auto"></a>
+   </div>
+</div>
+ 
+				 
+					 
+	<div class="new-promotion-columns stationery2-columns">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="single-promo-wrapper"> 
+				<img src="img/catalog/default_new/icon-free-shipping.png" alt="Free shipping">
+				<p>Free Shipping & Returns</p>
+			</div>
+		</div>
+		
+		<div class="col-sm-4">
+			<div class="single-promo-wrapper"> 
+				<img src="img/catalog/default_new/icon-money.png" alt="Money">
+				<p>100% Money refund</p>
+			</div>
+		</div>
+		
+		<div class="col-sm-4">
+			<div class="single-promo-wrapper"> 
+				<img src="img/catalog/default_new/icon-delivery.png" alt="Delivery">
+				<p>Fast send and delivery</p>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+				 
+			</div>
+		</div>
+	</div>
+	</header>			 
+ 
+
+		 
+	 
+	 
+	
+	<!-- MAIN CONTENT
+		================================================== -->
+	<div class="main-content  full-width  home">
+		<div class="background-content"></div>
+		<div class="background">
+			<div class="shadow"></div>
+			<div class="pattern">
+				<div class="container">
+					
+															
+					 
+					
+					
+										 
+					<div class="row">
+						<div class="col-sm-12">
+														 
+									 
+ 
+ 
+
+ 
+ 
+ 
+<div class="box clearfix box-with-products  with-scroll  box-no-advanced">
+   
+  <!-- Carousel nav -->
+  <a class="next" href="#myCarousel12356190704" id="myCarousel12356190704_next"><span></span></a>
+  <a class="prev" href="#myCarousel12356190704" id="myCarousel12356190704_prev"><span></span></a>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var owl12356190704 = $(".box #myCarousel12356190704 .carousel-inner");
+  	
+    $("#myCarousel12356190704_next").click(function(){
+        owl12356190704.trigger('owl.next');
+        return false;
+      })
+    $("#myCarousel12356190704_prev").click(function(){
+        owl12356190704.trigger('owl.prev');
+        return false;
+    });
+      
+    owl12356190704.owlCarousel({
+    	  slideSpeed : 500,
+        singleItem:true,
+         
+     });
+  });
+  </script>
+  	
+  <div class="box-heading">Latest products</div>
+  <div class="strip-line"></div>
+  <div class="clear"></div>
+  <div class="box-content products">
+    <div class="box-product">
+    	<div id="myCarousel12356190704" class="carousel slide">
+    		<!-- Carousel items -->
+    		<div class="carousel-inner">
+    			     
+	    			  <div class="active item"><div class="product-grid"><div class="row">  
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index3d7a.html?route=product/product&amp;product_id=49">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/samsung_tab_1-262x352.jpg" alt="Samsung Galaxy Tab 10.1" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index3d7a.html?route=product/product&amp;product_id=49">Samsung Galaxy Tab 10.1</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$241.99 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a href="javascript:openPopup('0', '49')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index5f2b.html?route=product/quickview&amp;product_id=49" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('49');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb77e.html?route=product/product&amp;product_id=48">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/ipod_classic_1-262x352.jpg" alt="iPod Classic" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">iPod Classic</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexcc47.html?route=product/quickview&amp;product_id=48" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd21c.html?route=product/product&amp;product_id=47">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/hp_1-262x352.jpg" alt="HP LP3065" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd21c.html?route=product/product&amp;product_id=47">HP LP3065</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index0deb.html?route=product/quickview&amp;product_id=47" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index2ebe.html?route=product/product&amp;product_id=46">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/sony_vaio_1-262x352.jpg" alt="Sony VAIO" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index2ebe.html?route=product/product&amp;product_id=46">Sony VAIO</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index72db.html?route=product/quickview&amp;product_id=46" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			   </div></div></div><div class="item"><div class="product-grid"><div class="row">    
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index531d.php?route=product/product&amp;product_id=45">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_pro_1-262x352.jpg" alt="MacBook Pro" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index531d.php?route=product/product&amp;product_id=45">MacBook Pro</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$2,000.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index86c0.html?route=product/quickview&amp;product_id=45" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd94c.html?route=product/product&amp;product_id=44">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_air_1-262x352.jpg" alt="MacBook Air" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd94c.html?route=product/product&amp;product_id=44">MacBook Air</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index24a8.html?route=product/quickview&amp;product_id=44" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb8ca.html?route=product/product&amp;product_id=43">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_1-262x352.jpg" alt="MacBook" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb8ca.html?route=product/product&amp;product_id=43">MacBook</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$602.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexd67a.html?route=product/quickview&amp;product_id=43" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-3 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexbb02.html?route=product/product&amp;product_id=42">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/apple_cinema_30-262x352.jpg" alt="Apple Cinema 30&quot;" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30&quot;</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index452f.html?route=product/quickview&amp;product_id=42" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			  
+    			 </div></div></div>  
+    		</div>
+		</div>
+    </div>
+  </div>
+</div>
+ 
+								 
+									 
+	<div class="lookbook">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info">
+				<div class="first-heading">The new Lookbook</div>
+				<div class="second-heading">Just pin everything you love!</div>
+				<link href="fonts.googleapis.com/css8f23.css?family=Caveat" rel="stylesheet">
+				<a href="#" class="button">Read more</a>
+			</div>
+		</div>
+		
+		<div class="col-sm-8">
+			<div class="image">
+				<img src="img/catalog/default_new/lookbook.jpg" alt="">
+				<div class="pin" style="left: 67%;top: 72.82%"><a href="#" data-toggle="tooltip" data-original-title="Wrangler jeans - $189.99">1</a></div>
+				<div class="pin" style="left: 4%;top: 36.5%"><a href="#" data-toggle="tooltip" data-original-title="Sunglasses - $119.99">2</a></div>
+				<div class="pin" style="left: 62.4%;top: 33%"><a href="#" data-toggle="tooltip" data-original-title="Sweater - $289.99">3</a></div>
+				<div class="pin" style="left: 27.46%;top: 36.72%"><a href="#" data-toggle="tooltip" data-original-title="Necklace - $389.99">4</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+								 
+									 
+                
+           
+
+     <div class="advanced-grid advanced-grid-93907088 container-full-width " style="margin-top: 0px;margin-bottom: 0px;">
+           
+           
+          <div style=""> 
+                <div class="container">
+                    <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                         <div class="row">
+                               
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-12">
+                                         
+                                              
+                                                  <div class="row banners banners-with-padding-0">
+ <div class="col-sm-12"><a href="#"><img src="img/catalog/default_new/all-glasses-on-sale.png" alt="Image"></a></div>
+ </div> 
+                                              
+                                         
+                                   </div>
+                                                        </div>
+                    </div>
+               </div>
+          </div>
+          
+           
+     </div>
+
+      
+     <script type="text/javascript">
+          function force_full_width_93907088() {
+               var p = $(".standard-body .full-width .advanced-grid-93907088");
+               
+                
+               if(p.size() > 0) {
+                    p.width($('body').width());
+                    p.css("left", "0px");
+                    var position = p.offset();
+                    p.css("left", "-" + position.left + "px");
+                    p.find(".container").css("padding-left", position.left);
+                    p.find(".container").css("padding-right", position.left);
+                    
+               }
+                
+               
+               var s = $(".standard-body .fixed .advanced-grid-93907088");
+                
+               if(s.size() > 0) {
+                    s.width($('.standard-body .fixed .pattern').width());
+                    s.css("left", "0px");
+                    var position = s.offset();
+                    var position2 = $('.standard-body .fixed .pattern').offset();
+                    var position3 = position.left-position2.left;
+                    s.css("left", "-" + position3 + "px");
+                    s.find(".container").css("padding-left", position3);
+                    s.find(".container").css("padding-right", position3);
+               }
+                
+               
+               var c = $(".fixed-body .advanced-grid-93907088");
+                
+               if(c.size() > 0) {
+                    c.width($('.fixed-body .main-fixed').width());
+                    c.css("left", "0px");
+                    var position = c.offset();
+                    var position2 = $('.fixed-body .main-fixed').offset();
+                    var position3 = position.left-position2.left;
+                    c.css("left", "-" + position3 + "px");
+                    c.find(".container").css("padding-left", position3);
+                    c.find(".container").css("padding-right", position3);
+               }
+                
+          }
+          
+          force_full_width_93907088();
+          
+          $(window).resize(function() {
+               force_full_width_93907088();
+          });
+     </script>
+     
+								 
+									 
+                
+           
+
+     <div class="advanced-grid advanced-grid-121871805 categories-wall type-3 container-full-width " style="margin-top: 0px;margin-bottom: 0px;">
+           
+           
+          <div style=""> 
+                <div class="container">
+                    <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                         <div class="row">
+                               
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-4">
+                                         
+                                              
+                                                  <div class="category-wall">
+   <h3><a href="index98dc.html?route=product/category&amp;path=20">Men</a></h3>
+   <ul>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Outerwear</a></li>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Blazers</a></li>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Leather Jackets</a></li>
+   </ul>
+   <a href="index98dc.html?route=product/category&amp;path=20" class="more-categories">More categories</a>
+   <div class="image"><a href="index98dc.html?route=product/category&amp;path=20"><img src="img/catalog/default_new/category-wall-01.png" alt="Image"></a></div>
+</div> 
+                                              
+                                         
+                                   </div>
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-4">
+                                         
+                                              
+                                                  <div class="category-wall">
+   <h3><a href="index98dc.html?route=product/category&amp;path=20">Women</a></h3>
+   <ul>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Dresses</a></li>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Maxi</a></li>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Outerwear</a></li>
+   </ul>
+   <a href="index98dc.html?route=product/category&amp;path=20" class="more-categories">More categories</a>
+   <div class="image"><a href="index98dc.html?route=product/category&amp;path=20"><img src="img/catalog/default_new/category-wall-02.png" alt="Image"></a></div>
+</div> 
+                                              
+                                         
+                                   </div>
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-4">
+                                         
+                                              
+                                                  <div class="category-wall">
+   <h3><a href="index98dc.html?route=product/category&amp;path=20">Accessories</a></h3>
+   <ul>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Watches</a></li>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Bags</a></li>
+      <li><a href="index98dc.html?route=product/category&amp;path=20">Cases</a></li>
+   </ul>
+   <a href="index98dc.html?route=product/category&amp;path=20" class="more-categories">More categories</a>
+   <div class="image"><a href="index98dc.html?route=product/category&amp;path=20"><img src="img/catalog/default_new/category-wall-03.png" alt="Image"></a></div>
+</div> 
+                                              
+                                         
+                                   </div>
+                                                        </div>
+                    </div>
+               </div>
+          </div>
+          
+           
+     </div>
+
+      
+     <script type="text/javascript">
+          function force_full_width_121871805() {
+               var p = $(".standard-body .full-width .advanced-grid-121871805");
+               
+                
+               if(p.size() > 0) {
+                    p.width($('body').width());
+                    p.css("left", "0px");
+                    var position = p.offset();
+                    p.css("left", "-" + position.left + "px");
+                    p.find(".container").css("padding-left", position.left);
+                    p.find(".container").css("padding-right", position.left);
+                    
+               }
+                
+               
+               var s = $(".standard-body .fixed .advanced-grid-121871805");
+                
+               if(s.size() > 0) {
+                    s.width($('.standard-body .fixed .pattern').width());
+                    s.css("left", "0px");
+                    var position = s.offset();
+                    var position2 = $('.standard-body .fixed .pattern').offset();
+                    var position3 = position.left-position2.left;
+                    s.css("left", "-" + position3 + "px");
+                    s.find(".container").css("padding-left", position3);
+                    s.find(".container").css("padding-right", position3);
+               }
+                
+               
+               var c = $(".fixed-body .advanced-grid-121871805");
+                
+               if(c.size() > 0) {
+                    c.width($('.fixed-body .main-fixed').width());
+                    c.css("left", "0px");
+                    var position = c.offset();
+                    var position2 = $('.fixed-body .main-fixed').offset();
+                    var position3 = position.left-position2.left;
+                    c.css("left", "-" + position3 + "px");
+                    c.find(".container").css("padding-left", position3);
+                    c.find(".container").css("padding-right", position3);
+               }
+                
+          }
+          
+          force_full_width_121871805();
+          
+          $(window).resize(function() {
+               force_full_width_121871805();
+          });
+     </script>
+     
+								 
+									 
+	<div class="row banners">
+ <div class="col-sm-6"><a href="#"><img src="img/catalog/default_new/banner-06.jpg" alt="Image"></a></div>
+ <div class="col-sm-6"><a href="#"><img src="img/catalog/default_new/banner-07.jpg" alt="Image"></a></div>
+ </div>
+
+															
+						</div>
+					</div>
+					 
+					
+					<div class="row">				
+						
+												 
+						<div class="col-md-3" id="column_left">
+													 
+								 
+ 
+ 
+
+ 
+ 
+ 
+<div class="box clearfix box-with-products  with-scroll  box-no-advanced">
+   
+  <!-- Carousel nav -->
+  <a class="next" href="#myCarousel26984900" id="myCarousel26984900_next"><span></span></a>
+  <a class="prev" href="#myCarousel26984900" id="myCarousel26984900_prev"><span></span></a>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var owl26984900 = $(".box #myCarousel26984900 .carousel-inner");
+  	
+    $("#myCarousel26984900_next").click(function(){
+        owl26984900.trigger('owl.next');
+        return false;
+      })
+    $("#myCarousel26984900_prev").click(function(){
+        owl26984900.trigger('owl.prev');
+        return false;
+    });
+      
+    owl26984900.owlCarousel({
+    	  slideSpeed : 500,
+        singleItem:true,
+         
+     });
+  });
+  </script>
+  	
+  <div class="box-heading">Bestsellers</div>
+  <div class="strip-line"></div>
+  <div class="clear"></div>
+  <div class="box-content products">
+    <div class="box-product">
+    	<div id="myCarousel26984900" class="carousel slide">
+    		<!-- Carousel items -->
+    		<div class="carousel-inner">
+    			     
+	    			  <div class="active item"><div class="product-grid"><div class="row">  
+	    			     
+	    			<div class="col-sm-6 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd21c.html?route=product/product&amp;product_id=47">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/hp_1-262x352.jpg" alt="HP LP3065" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd21c.html?route=product/product&amp;product_id=47">HP LP3065</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index0deb.html?route=product/quickview&amp;product_id=47" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-6 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexbb02.html?route=product/product&amp;product_id=42">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/apple_cinema_30-262x352.jpg" alt="Apple Cinema 30&quot;" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30&quot;</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index452f.html?route=product/quickview&amp;product_id=42" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			   </div></div></div><div class="item"><div class="product-grid"><div class="row">    
+	    			<div class="col-sm-6 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb77e.html?route=product/product&amp;product_id=48">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/ipod_classic_1-262x352.jpg" alt="iPod Classic" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">iPod Classic</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexcc47.html?route=product/quickview&amp;product_id=48" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-6 col-xs-6     ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexf073.html?route=product/product&amp;product_id=30">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/canon_eos_5d_1-262x352.jpg" alt="Canon EOS 5D" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexf073.html?route=product/product&amp;product_id=30">Canon EOS 5D</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$98.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('30');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index2935.html?route=product/quickview&amp;product_id=30" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('30');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			  
+    			 </div></div></div>  
+    		</div>
+		</div>
+    </div>
+  </div>
+</div>
+ 
+							 
+								 
+	<div class="row banners hidden-xs hidden-sm">
+ <div class="col-sm-12"><a href="#"><img src="img/catalog/default_new/banner-08.jpg" alt="Image"></a></div>
+ </div>
+
+														
+						</div>
+						 
+						    
+						<div class="col-md-9">
+							
+														 
+								 
+									 
+ 
+ 
+
+ 
+ 
+<div class="filter-product">
+	<div class="filter-tabs">
+		<div class="bg-filter-tabs"><div class="bg-filter-tabs2 clearfix">
+		<ul id="tab3810635101">
+			 
+			 
+				<li class="active"><a href="#latest-3810635101-0">Men</a></li>
+			 
+			 
+				<li ><a href="#random-3810635101-1">Women</a></li>
+			 
+			 
+				<li ><a href="#most_viewed-3810635101-2">Accessories</a></li>
+			 
+			 
+		</ul>
+		</div></div>
+	</div>
+	
+	<div class="tab-content clearfix">
+		 
+		 
+		<div class="tab-pane  active " id="latest-3810635101-0">
+						
+			<div class="box-product">
+				<div id="myCarousel3810635101-0" >
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+						    
+			    			 <div class="active item"><div class="product-grid"><div class="row">  
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index3d7a.html?route=product/product&amp;product_id=49">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/samsung_tab_1-262x352.jpg" alt="Samsung Galaxy Tab 10.1" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index3d7a.html?route=product/product&amp;product_id=49">Samsung Galaxy Tab 10.1</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$241.99 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a href="javascript:openPopup('0', '49')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index5f2b.html?route=product/quickview&amp;product_id=49" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('49');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb77e.html?route=product/product&amp;product_id=48">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/ipod_classic_1-262x352.jpg" alt="iPod Classic" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">iPod Classic</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexcc47.html?route=product/quickview&amp;product_id=48" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd21c.html?route=product/product&amp;product_id=47">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/hp_1-262x352.jpg" alt="HP LP3065" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd21c.html?route=product/product&amp;product_id=47">HP LP3065</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index0deb.html?route=product/quickview&amp;product_id=47" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index2ebe.html?route=product/product&amp;product_id=46">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/sony_vaio_1-262x352.jpg" alt="Sony VAIO" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index2ebe.html?route=product/product&amp;product_id=46">Sony VAIO</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index72db.html?route=product/quickview&amp;product_id=46" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			    </div><div class="row">   
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index531d.php?route=product/product&amp;product_id=45">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_pro_1-262x352.jpg" alt="MacBook Pro" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index531d.php?route=product/product&amp;product_id=45">MacBook Pro</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$2,000.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index86c0.html?route=product/quickview&amp;product_id=45" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd94c.html?route=product/product&amp;product_id=44">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_air_1-262x352.jpg" alt="MacBook Air" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd94c.html?route=product/product&amp;product_id=44">MacBook Air</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index24a8.html?route=product/quickview&amp;product_id=44" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb8ca.html?route=product/product&amp;product_id=43">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_1-262x352.jpg" alt="MacBook" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb8ca.html?route=product/product&amp;product_id=43">MacBook</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$602.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexd67a.html?route=product/quickview&amp;product_id=43" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexbb02.html?route=product/product&amp;product_id=42">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/apple_cinema_30-262x352.jpg" alt="Apple Cinema 30&quot;" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30&quot;</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index452f.html?route=product/quickview&amp;product_id=42" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						  
+						 </div></div></div>  
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		 
+		<div class="tab-pane " id="random-3810635101-1">
+						
+			<div class="box-product">
+				<div id="myCarousel3810635101-1" >
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+						    
+			    			 <div class="active item"><div class="product-grid"><div class="row">  
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexbfcf.html?route=product/product&amp;product_id=31">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/nikon_d300_1-262x352.jpg" alt="Nikon D300" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexbfcf.html?route=product/product&amp;product_id=31">Nikon D300</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$98.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('31');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index1411.html?route=product/quickview&amp;product_id=31" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('31');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index6a4d.html?route=product/product&amp;product_id=33">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/samsung_syncmaster_941bw-262x352.jpg" alt="Samsung SyncMaster 941BW" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index6a4d.html?route=product/product&amp;product_id=33">Samsung SyncMaster 941BW</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$242.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('33');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexf68c.html?route=product/quickview&amp;product_id=33" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('33');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexa17e.html?route=product/product&amp;product_id=32">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/ipod_touch_1-262x352.jpg" alt="iPod Touch" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexa17e.html?route=product/product&amp;product_id=32">iPod Touch</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('32');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index5049.html?route=product/quickview&amp;product_id=32" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('32');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			<div class="image">
+				<a href="indexfac8.html?route=product/product&amp;product_id=35"><img src="img/no_image.jpg" alt="Product 8"  /></a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexfac8.html?route=product/product&amp;product_id=35">Product 8</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('35');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index2449.html?route=product/quickview&amp;product_id=35" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('35');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			    </div><div class="row">   
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexcae8.html?route=product/product&amp;product_id=41">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/imac_1-262x352.jpg" alt="iMac" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexcae8.html?route=product/product&amp;product_id=41">iMac</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a href="javascript:openPopup('0', '41')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index464d.html?route=product/quickview&amp;product_id=41" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('41');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index3d7a.html?route=product/product&amp;product_id=49">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/samsung_tab_1-262x352.jpg" alt="Samsung Galaxy Tab 10.1" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index3d7a.html?route=product/product&amp;product_id=49">Samsung Galaxy Tab 10.1</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$241.99 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a href="javascript:openPopup('0', '49')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index5f2b.html?route=product/quickview&amp;product_id=49" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('49');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index6320.html?route=product/product&amp;product_id=28">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/htc_touch_hd_1-262x352.jpg" alt="HTC Touch HD" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index6320.html?route=product/product&amp;product_id=28">HTC Touch HD</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('28');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index087b.html?route=product/quickview&amp;product_id=28" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('28');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd94c.html?route=product/product&amp;product_id=44">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_air_1-262x352.jpg" alt="MacBook Air" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd94c.html?route=product/product&amp;product_id=44">MacBook Air</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index24a8.html?route=product/quickview&amp;product_id=44" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						  
+						 </div></div></div>  
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		 
+		<div class="tab-pane " id="most_viewed-3810635101-2">
+						
+			<div class="box-product">
+				<div id="myCarousel3810635101-2" >
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+						    
+			    			 <div class="active item"><div class="product-grid"><div class="row">  
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd21c.html?route=product/product&amp;product_id=47">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/hp_1-262x352.jpg" alt="HP LP3065" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd21c.html?route=product/product&amp;product_id=47">HP LP3065</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index0deb.html?route=product/quickview&amp;product_id=47" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexbb02.html?route=product/product&amp;product_id=42">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/apple_cinema_30-262x352.jpg" alt="Apple Cinema 30&quot;" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30&quot;</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index452f.html?route=product/quickview&amp;product_id=42" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb77e.html?route=product/product&amp;product_id=48">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/ipod_classic_1-262x352.jpg" alt="iPod Classic" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">iPod Classic</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexcc47.html?route=product/quickview&amp;product_id=48" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexf073.html?route=product/product&amp;product_id=30">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/canon_eos_5d_1-262x352.jpg" alt="Canon EOS 5D" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexf073.html?route=product/product&amp;product_id=30">Canon EOS 5D</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$98.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('30');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index2935.html?route=product/quickview&amp;product_id=30" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('30');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			    </div><div class="row">   
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd94c.html?route=product/product&amp;product_id=44">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_air_1-262x352.jpg" alt="MacBook Air" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd94c.html?route=product/product&amp;product_id=44">MacBook Air</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index24a8.html?route=product/quickview&amp;product_id=44" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index2ebe.html?route=product/product&amp;product_id=46">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/sony_vaio_1-262x352.jpg" alt="Sony VAIO" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index2ebe.html?route=product/product&amp;product_id=46">Sony VAIO</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index72db.html?route=product/quickview&amp;product_id=46" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb8ca.html?route=product/product&amp;product_id=43">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_1-262x352.jpg" alt="MacBook" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb8ca.html?route=product/product&amp;product_id=43">MacBook</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$602.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexd67a.html?route=product/quickview&amp;product_id=43" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						   
+			    			 
+			    			     
+			    			<div class="col-sm-3 col-xs-6     ">
+			    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index6320.html?route=product/product&amp;product_id=28">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/htc_touch_hd_1-262x352.jpg" alt="HTC Touch HD" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index6320.html?route=product/product&amp;product_id=28">HTC Touch HD</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('28');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index087b.html?route=product/quickview&amp;product_id=28" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('28');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>			    			</div>
+						  
+						 </div></div></div>  
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		 
+	</div>
+</div>
+ 
+<script type="text/javascript">
+$('#tab3810635101 a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+</script>
+ 
+															 
+							
+							<div class="row">
+								
+								 
+																 
+																
+								<div class="col-md-12">
+									
+																		 
+								</div>
+								
+								 
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">	
+						<div class="col-sm-12">	
+							
+														 
+															 
+									 
+                
+           
+
+     <div class="advanced-grid advanced-grid-19779480  " style="margin-top: 50px;margin-bottom: 0px;">
+          <div class="parallax-window" style=" background-color: #f3f3f3;   background-image: url(img/catalog/default_new/parallax.jpg); " data-velocity="-0.4"> 
+           
+           
+                <div class="container">
+                    <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                         <div class="row">
+                               
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-12">
+                                         
+                                              
+                                                  <div class="banner-big-sale type-2">
+   <h3>Parallax<br>module</h3>
+   <a href="#" class="button">Read more</a>
+</div> 
+                                              
+                                         
+                                   </div>
+                                                        </div>
+                    </div>
+               </div>
+          </div>
+          
+           
+          <script type="text/javascript" src="js/jquery.scrolly.js"></script>
+          <script>
+              $(document).ready(function(){
+                 $('.advanced-grid-19779480 .parallax-window').scrolly({bgParallax: true});
+              });
+          </script>
+           
+     </div>
+
+      
+     <script type="text/javascript">
+          function force_full_width_19779480() {
+               var p = $(".standard-body .full-width .advanced-grid-19779480");
+               
+                
+               if(p.size() > 0) {
+                    p.width($('body').width());
+                    p.css("left", "0px");
+                    var position = p.offset();
+                    p.css("left", "-" + position.left + "px");
+                    p.find(".container").css("padding-left", position.left);
+                    p.find(".container").css("padding-right", position.left);
+                    
+               }
+                
+               
+               var s = $(".standard-body .fixed .advanced-grid-19779480");
+                
+               if(s.size() > 0) {
+                    s.width($('.standard-body .fixed .pattern').width());
+                    s.css("left", "0px");
+                    var position = s.offset();
+                    var position2 = $('.standard-body .fixed .pattern').offset();
+                    var position3 = position.left-position2.left;
+                    s.css("left", "-" + position3 + "px");
+                    s.find(".container").css("padding-left", position3);
+                    s.find(".container").css("padding-right", position3);
+               }
+                
+               
+               var c = $(".fixed-body .advanced-grid-19779480");
+                
+               if(c.size() > 0) {
+                    c.width($('.fixed-body .main-fixed').width());
+                    c.css("left", "0px");
+                    var position = c.offset();
+                    var position2 = $('.fixed-body .main-fixed').offset();
+                    var position3 = position.left-position2.left;
+                    c.css("left", "-" + position3 + "px");
+                    c.find(".container").css("padding-left", position3);
+                    c.find(".container").css("padding-right", position3);
+               }
+                
+          }
+          
+          force_full_width_19779480();
+          
+          $(window).resize(function() {
+               force_full_width_19779480();
+          });
+     </script>
+     
+								 
+									 
+ 
+ 
+
+ 
+ 
+ 
+<div class="box clearfix box-with-products  with-scroll  box-no-advanced">
+   
+  <!-- Carousel nav -->
+  <a class="next" href="#myCarousel324919866" id="myCarousel324919866_next"><span></span></a>
+  <a class="prev" href="#myCarousel324919866" id="myCarousel324919866_prev"><span></span></a>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var owl324919866 = $(".box #myCarousel324919866 .carousel-inner");
+  	
+    $("#myCarousel324919866_next").click(function(){
+        owl324919866.trigger('owl.next');
+        return false;
+      })
+    $("#myCarousel324919866_prev").click(function(){
+        owl324919866.trigger('owl.prev');
+        return false;
+    });
+      
+    owl324919866.owlCarousel({
+    	  slideSpeed : 500,
+        singleItem:true,
+         
+     });
+  });
+  </script>
+  	
+  <div class="box-heading">Featured</div>
+  <div class="strip-line"></div>
+  <div class="clear"></div>
+  <div class="box-content products">
+    <div class="box-product">
+    	<div id="myCarousel324919866" class="carousel slide">
+    		<!-- Carousel items -->
+    		<div class="carousel-inner">
+    			     
+	    			  <div class="active item"><div class="product-grid"><div class="row">  
+	    			     
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3      ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd21c.html?route=product/product&amp;product_id=47">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/hp_1-262x352.jpg" alt="HP LP3065" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd21c.html?route=product/product&amp;product_id=47">HP LP3065</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$122.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index0deb.html?route=product/quickview&amp;product_id=47" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3      ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index2ebe.html?route=product/product&amp;product_id=46">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/sony_vaio_1-262x352.jpg" alt="Sony VAIO" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index2ebe.html?route=product/product&amp;product_id=46">Sony VAIO</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index72db.html?route=product/quickview&amp;product_id=46" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3      ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index531d.php?route=product/product&amp;product_id=45">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_pro_1-262x352.jpg" alt="MacBook Pro" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index531d.php?route=product/product&amp;product_id=45">MacBook Pro</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$2,000.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index86c0.html?route=product/quickview&amp;product_id=45" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3      ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexd94c.html?route=product/product&amp;product_id=44">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_air_1-262x352.jpg" alt="MacBook Air" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexd94c.html?route=product/product&amp;product_id=44">MacBook Air</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$1,202.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index24a8.html?route=product/quickview&amp;product_id=44" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3     hidden-sm   ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="indexb8ca.html?route=product/product&amp;product_id=43">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/macbook_1-262x352.jpg" alt="MacBook" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexb8ca.html?route=product/product&amp;product_id=43">MacBook</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$602.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexd67a.html?route=product/quickview&amp;product_id=43" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			     
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3    hidden-md hidden-sm    ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+								 
+
+				 
+					<div class="sale">Sale</div>
+								
+			  
+			
+			<div class="image ">
+				<a href="indexbb02.html?route=product/product&amp;product_id=42">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/apple_cinema_30-262x352.jpg" alt="Apple Cinema 30&quot;" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		 
+			 
+		 		 		  
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Apple Cinema 30&quot;</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			<span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="index452f.html?route=product/quickview&amp;product_id=42" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			   
+	    			 
+	    			   </div></div></div><div class="item"><div class="product-grid"><div class="row">    
+	    			<div class="col-sm-2 col-xs-6  col-md-25 col-lg-2 col-sm-3      ">
+	    				
+<!-- Product -->
+<div class="product clearfix product-hover">
+	<div class="left">
+		 
+			 
+			
+			<div class="image ">
+				<a href="index6a4d.html?route=product/product&amp;product_id=33">
+					 
+					
+					 
+					<img src="img/cache/catalog/demo/samsung_syncmaster_941bw-262x352.jpg" alt="Samsung SyncMaster 941BW" class="" />
+					 
+				</a>
+			</div>
+		 
+		
+		  
+	</div>
+	<div class="right">
+		<div class="name"><a href="index6a4d.html?route=product/product&amp;product_id=33">Samsung SyncMaster 941BW</a></div>
+		 
+		
+		 
+		<div class="price">
+			 
+			$242.00 
+			 
+		</div>
+		 
+		
+		
+		 
+		<div class="only-hover">
+		     <ul>
+		           
+		                
+		               	  		 				 
+		               		<li><a onclick="cart.add('33');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+		                
+		           
+		          
+		           
+		          <li class="quickview"><a href="indexf68c.html?route=product/quickview&amp;product_id=33" data-toggle="tooltip" data-original-title=" Quickview "><i class="fa fa-search"></i></a></li>
+		           
+		     
+				 
+				
+				 
+				<li><a onclick="wishlist.add('33');" data-toggle="tooltip" data-original-title=" Add to wishlist "><i class="fa fa-heart"></i></a></li>
+				 
+			</ul>
+		</div>
+		 
+		
+	</div>
+</div>	    			</div>
+    			  
+    			 </div></div></div>  
+    		</div>
+		</div>
+    </div>
+  </div>
+</div>
+ 
+								 
+									  
+        <div class="box blog-module box-no-advanced">
+        <div class="box-heading">From the blog</div>
+        <div class="strip-line"></div>
+        <div class="box-content">
+             
+            <div class="news v1 row">
+                                <div class="col-sm-3 col-xs-6">
+                    <div class="media">
+                                                        <div  class="thumb-holder">
+                                <img alt="" src="img/cache/catalog/blog/16-262x343.jpg">
+                            </div>
+                             
+                            
+                            <div class="media-body" onclick="window.location.href = 'indexf01e.html?route=blog/article&amp;article_id=27'">
+                                 <div class="tags">
+                                        
+                                           <a href="indexb470.html?route=blog/blog&amp;tag=Fastor">Fastor</a> 
+                                        
+                                           <a href="index6002.html?route=blog/blog&amp;tag=+Beatiful">Beatiful</a> 
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                 </div>
+                                 
+                                 <div class="bottom">
+                                     <div class="date-published">16.09.2015</div>
+                                     <h5>Donec ut nunc sit amet urna aliquet</h5>
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+                                <div class="col-sm-3 col-xs-6">
+                    <div class="media">
+                                                        <div  class="thumb-holder">
+                                <img alt="" src="img/cache/catalog/blog/laptopmockup_sliderdy-150x150-262x343.jpg">
+                            </div>
+                             
+                            
+                            <div class="media-body" onclick="window.location.href = 'indexb8ca-2.html?route=blog/article&amp;article_id=18'">
+                                 <div class="tags">
+                                        
+                                           <a href="indexb470.html?route=blog/blog&amp;tag=Fastor">Fastor</a> 
+                                        
+                                           <a href="indexb7c0.html?route=blog/blog&amp;tag=Buy+It">Buy It</a> 
+                                        
+                                            
+                                        
+                                 </div>
+                                 
+                                 <div class="bottom">
+                                     <div class="date-published">16.09.2015</div>
+                                     <h5>Nulla dictum consequat lorem ac vehicula</h5>
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+                                <div class="col-sm-3 col-xs-6">
+                    <div class="media">
+                                                        <div  class="thumb-holder">
+                                <img alt="" src="img/cache/catalog/blog/4-262x343.jpg">
+                            </div>
+                             
+                            
+                            <div class="media-body" onclick="window.location.href = 'indexfad6.html?route=blog/article&amp;article_id=65'">
+                                 <div class="tags">
+                                        
+                                           <a href="indexb470.html?route=blog/blog&amp;tag=Fastor">Fastor</a> 
+                                        
+                                           <a href="index9f63.html?route=blog/blog&amp;tag=Passion">Passion</a> 
+                                        
+                                            
+                                        
+                                 </div>
+                                 
+                                 <div class="bottom">
+                                     <div class="date-published">12.09.2015</div>
+                                     <h5>Etiam ac aliquet ex nec volutpat orci</h5>
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+                                <div class="col-sm-3 col-xs-6">
+                    <div class="media">
+                                                        <div  class="thumb-holder">
+                                <img alt="" src="img/cache/catalog/blog/3-262x343.jpg">
+                            </div>
+                             
+                            
+                            <div class="media-body" onclick="window.location.href = 'index9e4b.html?route=blog/article&amp;article_id=64'">
+                                 <div class="tags">
+                                        
+                                           <a href="indexf8b2.html?route=blog/blog&amp;tag=Features">Features</a> 
+                                        
+                                           <a href="index2926.html?route=blog/blog&amp;tag=+Buy+It">Buy It</a> 
+                                        
+                                            
+                                        
+                                 </div>
+                                 
+                                 <div class="bottom">
+                                     <div class="date-published">06.09.2015</div>
+                                     <h5> Suspendisse dolor purus, laoreet nec</h5>
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+                 
+            </div>
+             
+        </div>
+    </div>
+
+								 
+									 
+                
+           
+
+     <div class="advanced-grid advanced-grid-105005035 container-full-width " style="margin-top: 0px;margin-bottom: 0px;">
+           
+           
+          <div style=""> 
+                <div class="container">
+                    <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                         <div class="row">
+                               
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-12">
+                                         
+                                              
+                                                  <div class="box box-instagram">
+   <div class="box-heading">@fastor on instagram</div>
+   <div class="box-content">
+       <div class="instagram-list clearfix">
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-1.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-2.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-3.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-4.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-5.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-6.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-7.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-8.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-9.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-10.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-11.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-12.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-13.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-14.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-15.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-16.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-17.jpg" alt=""></a></div>
+       		<div class="item"><a href="#" target="_blank"><img src="img/catalog/default_new/instagram-18.jpg" alt=""></a></div>
+       		<div class="last-item"><img src="img/catalog/default_new/blank.gif" alt=""><a href="#" target="_blank"><span>Follow us<br>on instagram</span></a></div>
+       </div>
+   </div>
+</div> 
+                                              
+                                         
+                                   </div>
+                                                        </div>
+                    </div>
+               </div>
+          </div>
+          
+           
+     </div>
+
+      
+     <script type="text/javascript">
+          function force_full_width_105005035() {
+               var p = $(".standard-body .full-width .advanced-grid-105005035");
+               
+                
+               if(p.size() > 0) {
+                    p.width($('body').width());
+                    p.css("left", "0px");
+                    var position = p.offset();
+                    p.css("left", "-" + position.left + "px");
+                    p.find(".container").css("padding-left", position.left);
+                    p.find(".container").css("padding-right", position.left);
+                    
+               }
+                
+               
+               var s = $(".standard-body .fixed .advanced-grid-105005035");
+                
+               if(s.size() > 0) {
+                    s.width($('.standard-body .fixed .pattern').width());
+                    s.css("left", "0px");
+                    var position = s.offset();
+                    var position2 = $('.standard-body .fixed .pattern').offset();
+                    var position3 = position.left-position2.left;
+                    s.css("left", "-" + position3 + "px");
+                    s.find(".container").css("padding-left", position3);
+                    s.find(".container").css("padding-right", position3);
+               }
+                
+               
+               var c = $(".fixed-body .advanced-grid-105005035");
+                
+               if(c.size() > 0) {
+                    c.width($('.fixed-body .main-fixed').width());
+                    c.css("left", "0px");
+                    var position = c.offset();
+                    var position2 = $('.fixed-body .main-fixed').offset();
+                    var position3 = position.left-position2.left;
+                    c.css("left", "-" + position3 + "px");
+                    c.find(".container").css("padding-left", position3);
+                    c.find(".container").css("padding-right", position3);
+               }
+                
+          }
+          
+          force_full_width_105005035();
+          
+          $(window).resize(function() {
+               force_full_width_105005035();
+          });
+     </script>
+     
+																
+							 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ 
+ 
+                    
+                    
+                    
+      
+           
+     <!-- FOOTER
+          ================================================== -->
+     <div class="footer  full-width ">
+          <div class="background-footer"></div>
+          <div class="background">
+               <div class="shadow"></div>
+               <div class="pattern">
+                    <div class="container">                      
+                         
+                          
+                               
+                                    
+                
+           
+
+     <div class="advanced-grid advanced-grid-46697294  " style="margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;">
+           
+           
+          <div style=""> 
+                <div class="container">
+                    <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                         <div class="row">
+                               
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-12">
+                                         
+                                              
+                                                  <div class="row footer-blocks-top">
+     <div class="col-sm-4 text-center">
+          <div class="footer-block">
+               <img src="img/catalog/icon-mail.png" alt="Mail">
+               <div class="footer-block-content">
+                    <h6>Do you have any question?</h6>
+                    <p>email.example@gmail.com</p>
+               </div>
+          </div>
+     </div>
+     
+     <div class="col-sm-4 text-center">
+          <div class="footer-block">
+               <img src="img/catalog/icon-phone.png" alt="Phone">
+               <div class="footer-block-content">
+                    <h6>800-140-100</h6>
+                    <p>Mon - Fri: 8:00 - 17:00</p>
+               </div>
+          </div>
+     </div>
+     
+     <div class="col-sm-4 text-center">
+          <a href="index2724.html?route=information/contact" class="footer-button">Contact form</a>
+     </div>
+</div> 
+                                              
+                                         
+                                   </div>
+                               
+                                   
+                                    
+                                                                                                                                                                 
+                                             </div><div class="row"> 
+                                              
+                                                                                 
+                                   <div class="col-sm-3">
+                                         
+                                              
+                                                  <div class="footer-about-us">
+     <img src="img/catalog/logo-footer.png" alt="Fastor">
+     <h6>PO Box 16122 Collins Street <br>Victoria 8007 Australia</h6>
+     <p>(+800) 1234 5678 90<br>info@company.com</p>
+     <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+     </ul>
+</div> 
+                                              
+                                         
+                                   </div>
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-3">
+                                         
+                                              
+                                                  	
+		 <h4>Custom block</h4>
+		<div class="strip-line"></div>
+
+				 
+
+		 
+	
+	 					 
+	
+	<div class="row" style="clear: both">
+	 <div class="col-sm-12">
+	 <ul>
+	  
+	 
+ 	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="index8816.html?route=information/information&amp;information_id=4">About us</a></li>
+ 	  	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="index1766.html?route=information/information&amp;information_id=6">Delivery information</a></li>
+ 	  	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="index1679.html?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+ 	  	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="index99e4.html?route=information/information&amp;information_id=5">Terms & Conditions</a></li>
+ 	  	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="index2724.html?route=information/contact">Contact us</a></li>
+ 	  	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="index7cb2.php?route=information/sitemap">Sitemap</a></li>
+ 	  	 
+ 	  	 
+  	  	 	 	 	 	 	 	 		 	 	 	  
+ 	 
+ 	 <li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
+ 	  	 
+ </ul>
+ </div>
+ </div>  
+                                              
+                                         
+                                   </div>
+                               
+                                   
+                                    
+                                                                                                                                                                                                         
+                                   <div class="col-sm-3">
+                                         
+                                              
+                                                  	
+		 <h4>Put here</h4>
+		<div class="strip-line"></div>
+
+				 
+
+		 
+	
+	 					 
+	
+	<div class="row" style="clear: both">
+	 <div class="col-sm-12">
+	 <ul>
+ 	 <li><a href="indexe223.html?route=account/account">My account</a></li>
+ 	 <li><a href="indexe223.html?route=account/order">Order History</a></li>
+ 	 <li><a href="indexe223.html?route=account/wishlist">Wish List</a></li>
+ 	 <li><a href="indexe223.html?route=account/newsletter">Newsletter</a></li>
+ 	 <li><a href="index71ba.html?route=account/return/add">Returns</a></li>
+ 	  	 
+ </ul>
+ </div>
+ </div>  
+                                   </div>
+                                                                                                                                                                                                         
+                                   <div class="col-sm-3">
+                                         
+                                              
+                                                       <h4>What you want</h4>
+     <div class="strip-line"></div>
+     
+     <div class="clearfix" style="clear: both"><div class="advanced-grid-products">
+       
+           <div class="product clearfix">
+                <div class="image"><a href="index3d7a.html?route=product/product&amp;product_id=49">
+                      
+                         <img src="img/cache/catalog/demo/samsung_tab_1-83x83.jpg" alt="Samsung Galaxy Tab 10.1" />
+                                     </a></div>
+                <div class="right">
+                     <div class="name"><a href="index3d7a.html?route=product/product&amp;product_id=49">Samsung Galaxy Tab 10.1</a></div>
+                     <div class="price">
+                                                   $241.99
+                                              </div>
+                </div>
+           </div>
+       
+           <div class="product clearfix">
+                <div class="image"><a href="indexb77e.html?route=product/product&amp;product_id=48">
+                      
+                         <img src="img/cache/catalog/demo/ipod_classic_1-83x83.jpg" alt="iPod Classic" />
+                                     </a></div>
+                <div class="right">
+                     <div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">iPod Classic</a></div>
+                     <div class="price">
+                                                   $122.00
+                                              </div>
+                </div>
+           </div>
+            </div></div>
+ 
+                                              
+                                         
+                                   </div>
+                               
+                                   
+                                    
+                                                                                                                                                                 
+                                             </div><div class="row"> 
+                                              
+                                                                                 
+                                   <div class="col-sm-12">
+                                         
+                                              
+                                                  <div class="row footer-blocks-bottom">
+     <div class="col-sm-4 text-center">
+          <div class="footer-block">
+               <img src="img/catalog/icon-free-shipping.png" alt="Free shipping">
+               <div class="footer-block-content">
+                    <h6>Free shipping & Return</h6>
+                    <p>For all orders over $500</p>
+               </div>
+          </div>
+     </div>
+     
+     <div class="col-sm-4 text-center">
+          <div class="footer-block">
+               <img src="img/catalog/icon-money-back.png" alt="Money back">
+               <div class="footer-block-content">
+                    <h6>Money back guarantee</h6>
+                    <p>100% money back guarante</p>
+               </div>
+          </div>
+     </div>
+
+     <div class="col-sm-4 text-center">
+          <div class="footer-block">
+               <img src="img/catalog/icon-support.png" alt="Support">
+               <div class="footer-block-content">
+                    <h6>Support 24/7</h6>
+                    <p>We answer for question all time</p>
+               </div>
+          </div>
+     </div>
+</div> 
+                                   </div>
+                                             </div>
+                                     <div class="row"> 
+		                               <div class="col-sm-12">
+		                              		<div style="text-align: center">Copyright © 2018, Your Store, All Rights Reserved.</div> 
+		                               </div>
+                                    </div>
+                    </div>
+               </div>
+          </div>
+          
+           
+     </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script type="text/javascript" src="js/megamenu.js"></script>
+</div>
+</div>
+ 
+</body>
+
+<!-- Mirrored from fastortheme.com/defaultnew/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2019 17:21:26 GMT -->
+</html>
